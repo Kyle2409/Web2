@@ -202,7 +202,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(christopher-sardegna-bSmKli4OTIY-unsplash.jpg);
+	background-image: url(image/christopher-sardegna-bSmKli4OTIY-unsplash.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -278,8 +278,12 @@ p {
 	text-align: center;
 }
 hr{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-top: 100px;
+	border-radius: 50px;
+	background-color: crimson;
+	height: 10px;
+	margin-left: 780px;
+	margin-right: 780px;
 }
  #journey h1{
 	font-size:60px;
@@ -300,7 +304,7 @@ hr{
 	position:absolute;
 	left:50%;
 	width:2px;
-	height:63%;
+	height:57%;
 	background:#c5c5c5;
   }
   .timeline ul{
@@ -394,6 +398,15 @@ hr{
   {
 	.timeline{
 	  width:100%;
+	}
+	.timeline:before{
+		margin-top: 40px;
+	  content:'';
+	  position:absolute;
+	  left:50%;
+	  width:2px;
+	  height:68%;
+	  background:#c5c5c5;
 	}
   }
   @media(max-width:767px){
@@ -541,7 +554,7 @@ hr{
 }
 #projects .project-img {
 	flex-basis: 50%;
-	height: 300px;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 }
@@ -557,6 +570,7 @@ hr{
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
+	height: 100%;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
@@ -624,6 +638,7 @@ hr{
 }
 #contact .contact-item {
 	width: 80%;
+	
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
@@ -645,11 +660,13 @@ hr{
 	margin-bottom: 10px;
 }
 #contact .contact-info h1 {
+	color: white;
 	font-size: 2.5rem;
 	font-weight: 500;
 	margin-bottom: 5px;
 }
 #contact .contact-info h2 {
+	color: white;
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
@@ -951,7 +968,7 @@ hr{
 	overflow: hidden;
 	width: var(--link-size);
 	height: var(--link-size);
-	background-color: #fff;
+	background-color: rgb(255, 243, 228);
 	margin: 8px;
 	border-radius: 50%;
 	box-shadow: 2px 5px 5px var(--shadow-col);
@@ -992,5 +1009,133 @@ hr{
 	box-shadow: var(--kaggle);
   }
 /* Testimonial Section */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+  }
+  
+  .testimonials {
+	margin: 4em auto;
+	width: 1100px;
+	max-width: 90%;
+  }
+  .testimonials::after {
+	clear: both;
+	content: "";
+	display: table;
+  }
+  .testimonials .block {
+	display: block;
+	margin: 0;
+  }
+  @media only screen and (min-width: 650px) {
+	.testimonials .block {
+	  float: left;
+	  width: 50%;
+	  height: 300px;
+	}
+  }
+  @media only screen and (min-width: 1000px) {
+	.testimonials .block {
+	  width: 33.3333333333%;
+	  height: 280px;
+	}
+  }
+  .testimonials .block:nth-child(n+2) {
+	padding: 1.5em;
+  }
+  .testimonials .block:nth-child(3), .testimonials .block:nth-child(5) {
+	background-color: crimson;
+  }
+  .testimonials .block:nth-child(4), .testimonials .block:nth-child(6) {
+	background-color: rgb(139, 18, 43);
+  }
+  .testimonials .block:nth-child(7) {
+	background-color: rgb(78, 6, 21);
+  }
+  .testimonials .block p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #fff;
+  }
+  .testimonials .block cite span {
+	display: block;
+	margin-top: 2em;
+	font-size: 14px;
+	font-weight: 600;
+	font-style: normal;
+	color: #fff;
+  }
+  .testimonials h2 {
+	margin: 0 0 0.5em;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #444;
+  }
+  .testimonials h5 {
+	margin-top: 0;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 300;
+	color: #308fc3;
+  }
 
-/* End  Media Query For Desktop */
+  form {
+	  opacity: 0.8;
+	  border-radius: 50px;
+    width: 400px;
+    padding: 25px;
+    margin: 25px;
+	
+	transition: width .5s ease 0s, right .5s ease 0s;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+	
+    }
+    .fas {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #fff;
+    }
+    .fa-envelope {
+    transform: rotate(-20deg);
+    }
+    .fa-at , .fa-mail-bulk{
+    transform: rotate(10deg);
+    }
+    input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+    border-radius: 10px;
+    }
+    input::placeholder {
+    color: #666;
+    } 
+    
+    @media (min-width: 568px) {
+    .main-block {
+    flex-direction: row;
+	}
+}
+#contact {
+	background-image: url(image/christopher-sardegna-bSmKli4OTIY-unsplash.jpg);
+	background-size: cover;
+}
+.bn30 {
+	outline: none;
+
+}
+/* End  Media Query For Desktop 
